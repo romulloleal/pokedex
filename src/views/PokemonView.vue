@@ -71,6 +71,12 @@ export default {
 
     <Evolves :evolves="evolves" :bgColor="pokemon.types[0].type.name"></Evolves>
   </div>
+  <div v-if="!pokemon">
+    <header class="bg-unknown">
+      <RouterLink to="/" class="goBack"><img :src="goBack" /></RouterLink>
+      <span class="name">Pokémon not found</span>
+    </header>
+  </div>
 </template>
 
 <style scoped>
