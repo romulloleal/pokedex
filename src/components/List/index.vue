@@ -1,15 +1,11 @@
 <script lang="ts">
 import ListItem from "./ListItem.vue";
 import type { PropType } from "vue";
-
-type PokemonList = {
-  name: string;
-  url: string;
-};
+import type { PokemonList } from "@/types/PokemonList";
 
 export default {
   props: {
-    pokemonList: { type: Array as PropType<PokemonList[]> },
+    pokemonList: Array as PropType<PokemonList[]>,
   },
   components: { ListItem },
 };

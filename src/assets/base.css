@@ -1,14 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
-:root {
-  --color-background: #fafafa;
-
-  --color-card: #FFFFFF;
-
-  --color-border: rgba(229, 229, 229, 0.9);
-
-  --color-text: rgb(30, 30, 30);
-}
-
 *,
 *::before,
 *::after {
@@ -16,16 +6,23 @@
   margin: 0;
   padding: 0;
   position: relative;
+
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
   font-weight: normal;
+}
+
+input, button, textarea {
+  background-color: transparent;
+  outline: none;
+  border: none;
 }
 
 body {
   min-height: 100vh;
-  color: var(--color-text);
-  background: var(--color-background);
-  line-height: 1.4;
-  font-family: 'Roboto', sans-serif;
-  font-size: 16px;
+  color: rgb(30, 30, 30);
+  background-color: #fafafa;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

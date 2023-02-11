@@ -13,13 +13,19 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--color-card);
+  background-color: #ffffff;
   padding: 10px;
   min-width: 170px;
-  flex-basis: 10.75%;
-  border: 1px solid var(--color-border);
+  flex-basis: 100%;
+  border: 1px solid rgba(229, 229, 229, 0.9);
   border-radius: 5px;
   cursor: pointer;
+}
+
+@media (min-width: 406px) {
+  .item {
+    flex-basis: 10.75%;
+  }
 }
 
 .name {
