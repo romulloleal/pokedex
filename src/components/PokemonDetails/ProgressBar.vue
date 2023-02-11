@@ -8,7 +8,7 @@ export default {
   },
   data() {
     return {
-      style: `width: ${(this.base_stat / 100) * 100}%`,
+      style: `width: ${this.base_stat > 100 ? 100 : this.base_stat}%`,
     };
   },
 };

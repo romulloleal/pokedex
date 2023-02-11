@@ -29,7 +29,14 @@ export default {
       </tr>
       <tr>
         <td class="al-right">Type</td>
-        <td></td>
+        <td class="types">
+          <span
+            v-for="(type, index) in pokemon.types"
+            :key="index"
+            :class="`bg-${type.type.name}`"
+            >{{ type.type.name }}</span
+          >
+        </td>
       </tr>
     </table>
     <img
@@ -52,8 +59,9 @@ export default {
 
 <style scoped>
 .details {
-  display: grid;
+  display: flex;
   align-items: center;
+  flex-direction: column;
   gap: 5%;
   margin: 0 auto;
   width: 100%;
@@ -62,13 +70,16 @@ export default {
 
 @media (min-width: 900px) {
   .details {
+    display: grid;
     grid-template-columns: repeat(3, 1fr);
     width: 90%;
   }
 }
 
-table td {
-  padding: 15px 10px;
+table {
+  border-collapse: separate;
+  border-spacing: 20px;
+  margin: 0 auto;
 }
 
 table .al-right {
@@ -76,8 +87,18 @@ table .al-right {
   font-weight: bold;
 }
 
-.detailStats .al-right {
-  text-transform: capitalize;
+.detailBasicInfo .types {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.detailBasicInfo .types span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .detailImage {
@@ -85,5 +106,9 @@ table .al-right {
   max-width: 500px;
   width: 100%;
   display: flex;
+}
+
+.detailStats .al-right {
+  text-transform: capitalize;
 }
 </style>
