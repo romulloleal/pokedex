@@ -19,16 +19,108 @@ input, button, textarea {
   border: none;
 }
 
+a {text-decoration: none; color: rgba(30, 30, 30);}
+
 body {
   min-height: 100vh;
-  color: rgb(30, 30, 30);
+  color: rgba(30, 30, 30);
   background-color: #fafafa;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-#app {
-  width: 90%;
-  margin: 0 auto;
+.bg-normal {
+	background-image: linear-gradient(rgba(168, 167, 122, 1),rgba(168, 167, 122, 0.7));
+	color: #fff;
+}
+
+.bg-fire {
+	background-image: linear-gradient(rgba(238, 129, 48, 1), rgba(238, 129, 48, 0.7));
+	color: #fff;
+}
+
+.bg-water {
+	background-image: linear-gradient(rgba(99, 144, 240, 1), rgba(99, 144, 240, 0.7));
+	color: #fff;
+}
+
+.bg-electric {
+	background-image: linear-gradient(rgba(247, 208, 44, 1), rgba(247, 208, 44, 0.7));
+	color: #fff;
+}
+
+.bg-grass {
+	background-image: linear-gradient(rgba(122, 199, 76, 1), rgba(122, 199, 76, 0.7));
+	color: #fff;
+}
+
+.bg-ice {
+	background-image: linear-gradient(rgba(150, 217, 214, 1), rgba(150, 217, 214, 0.7));
+	color: #fff;
+}
+
+.bg-fighting {
+	background-image: linear-gradient(rgba(194, 46, 41, 1), rgba(194, 46, 41, 0.7));
+	color: #fff;
+}
+
+.bg-poison {
+	background-image: linear-gradient(rgba(163, 62, 161, 1), rgba(163, 62, 161, 0.7));
+	color: #fff;
+}
+
+.bg-ground {
+	background-image: linear-gradient(rgba(226, 191, 101, 1), rgba(226, 191, 101, 0.7));
+	color: #fff;
+}
+
+.bg-flying {
+	background-image: linear-gradient(rgba(169, 143, 243, 1), rgba(169, 143, 243, 0.7));
+	color: #fff;
+}
+
+.bg-psychic {
+	background-image: linear-gradient(rgba(249, 85, 135, 1), rgba(249, 85, 135, 0.7));
+	color: #fff;
+}
+
+.bg-bug {
+	background-image: linear-gradient(rgba(166, 185, 26, 1), rgba(166, 185, 26, 0.7));
+	color: #fff;
+}
+
+.bg-rock {
+	background-image: linear-gradient(rgba(182, 161, 54, 1), rgba(182, 161, 54, 0.7));
+	color: #fff;
+}
+
+.bg-ghost, .bg-shadow {
+	background-image: linear-gradient(rgba(115, 87, 151, 1), rgba(115, 87, 151, 0.7));
+	color: #fff;
+}
+
+.bg-dragon {
+	background-image: linear-gradient(rgba(111, 53, 252, 1), rgba(111, 53, 252, 0.7));
+	color: #fff;
+}
+
+.bg-dark {
+	background-image: linear-gradient(rgba(112, 87, 70, 1), rgba(112, 87, 70, 0.7));
+	color: #fff;
+}
+
+.bg-steel {
+	background-image: linear-gradient(rgba(183, 183, 206, 1), rgba(183, 183, 206, 0.7));
+	color: #fff;
+}
+
+.bg-fairy {
+	background-image: linear-gradient(rgba(214, 133, 173, 1), rgba(214, 133, 173, 0.7));
+	color: #fff;
+}
+
+.bg-unknown {
+	background-image: linear-gradient(rgba(170, 170, 170, 1), rgba(170, 170, 170, 0.7));
+	color: #fff;
 }

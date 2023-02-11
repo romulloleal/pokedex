@@ -1,9 +1,9 @@
 <script lang="ts">
-import axios from "axios";
-import List from "@/components/List/index.vue";
+import List from "@/components/List.vue";
 import Search from "@/components/Search.vue";
 import LogoImg from "@/assets/logo.png";
 import type { PokemonList } from "@/types/PokemonList";
+import { api } from "@/services/api";
 
 export default {
   data() {
@@ -16,9 +16,7 @@ export default {
   components: { List, Search },
   methods: {
     async getPokemonList() {
-      const response = await axios.get(
-        "https://pokeapi.co/api/v2/pokemon-species?limit=1008"
-      );
+      const response = await api.get("/pokemon-species?limit=1008");
       this.pokemonList = response.data.results;
       this.searchedPokemons = response.data.results;
     },

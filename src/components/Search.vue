@@ -19,7 +19,7 @@ input {
   border: 1px solid rgba(229, 229, 229, 0.9);
   padding: 0 5px;
   border-radius: 5px;
-  width: 100%;
+  width: 90%;
   max-width: 400px;
   margin-bottom: 20px;
 }
